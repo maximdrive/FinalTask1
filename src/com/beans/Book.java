@@ -4,22 +4,22 @@ public class Book {
     private int idBook;
     private String name;
     private String author;
-    private int idStyle;
+    private String style;
 
     public Book(){}
 
-    public Book(String name,String author,int idStyle){
+    public Book(String name,String author,String style){
         this.name = name;
         this.author = author;
-        this.idStyle = idStyle;
+        this.style = style;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getStyle() {
-        return idStyle;
+    public String  getStyle() {
+        return style;
     }
 
     public int getIdBook() {
@@ -38,8 +38,8 @@ public class Book {
         this.author = author;
     }
 
-    public void setIdStyle(int idStyle) {
-        this.idStyle = idStyle;
+    public void setStyle(String style) {
+        this.style = style;
     }
 
     public void setName(String name) {
